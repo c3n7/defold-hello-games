@@ -1,0 +1,18 @@
+[bootstrap]
+main_collection = /main/main.collectionc
+
+[script]
+shared_state = 1
+
+[display]
+width = 960
+height = 480
+dynamic_orientation = 1
+display_profiles = /render/default.display_profilesc
+
+[android]
+input_method = HiddenInputField
+
+[project]
+title = endless-runner
+
