@@ -2,6 +2,22 @@ images {
   image: "/assets/simplified-platformer/PNG/Tiles/platformPack_tile001.png"
   sprite_trim_mode: SPRITE_TRIM_MODE_OFF
 }
+images {
+  image: "/assets/simplified-platformer/PNG/Tiles/platformPack_tile034.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/simplified-platformer/PNG/Tiles/platformPack_tile035.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/simplified-platformer/PNG/Tiles/platformPack_tile047.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
+images {
+  image: "/assets/simplified-platformer/PNG/Tiles/platformPack_tile046.png"
+  sprite_trim_mode: SPRITE_TRIM_MODE_OFF
+}
 margin: 0
 extrude_borders: 2
 inner_padding: 0
