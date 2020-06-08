@@ -1,0 +1,29 @@
+function init(self)
+	msg.post(".", "acquire_input_focus")
+	self.message = ""
+	label = gui.get_node("text")
+end
+
+function on_message(self, message_id, message, sender)
+	-- Add message-handling code here
+	-- Remove this function if not needed
+end
+
+function on_input(self, action_id, action)
+	if action_id == hash("type") then
+		self.message = self.message .. action.text
+		gui.set_text(label, self.message)
+	elseif action_id == hash("backspace") and action.repeated then
+		local l = string.len(self.message)
+		self.message = string.sub(self.message, 0, l - 1)
+		gui.set_text(label, self.message)
+	elseif action_id == hash("newline") and action.repeated then
+		local linesize = vmath.vector3(200, 15, 0)
+		local pos = gui.get_position(label) - vmath.vector3(0, 15, 0)
+		label = gui.new_text_node(pos, self.message)
+		gui.set_pivot(label, gui.PIVOT_W)
+		local l = string.len(self.message)
+		-- self.message = self.message .. "\n"
+		-- gui.set_text(label, self.message)
+	end
+end
